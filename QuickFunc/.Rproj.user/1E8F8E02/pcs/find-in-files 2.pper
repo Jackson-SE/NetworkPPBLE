@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "~/Documents/Academic_Work/R Functions in Packages/QuickFunc",
+        "query" : "mvtnorm",
+        "regex" : false
+    }
+}

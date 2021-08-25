@@ -1,0 +1,7 @@
+### Run these commands when using R packages. ###
+
+library("devtools")
+library("roxygen2")
+library("testthat")
+
+# devtools::build_manual( "" ) 

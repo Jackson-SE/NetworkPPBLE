@@ -1,0 +1,10 @@
+test_that("Check matrix or dataframes give same result", {
+  X <- matrix( rnorm( 10 ), ncol = 2 )
+  Y <- matrix( runif( 6 ), ncol = 2 )
+  theta <- c( 0.5, 0.8 )
+  expect_equal( GaussianCF( X, Y, theta ), GaussianCF( as.data.frame(X), Y, theta ) )
+  expect_error( GaussianCF( X[,1], Y ) )
+  expect_error( GaussianCF( X[,1], Y[,1] ) )
+  expect_error( GaussianCF( X, Y, theta[1] ) )
+  expect_equal( dim( GaussianCF( X[,1], Y[,1], theta[1] ) ), c( length( X[,1] ), length( Y[,1] ) ) )
+})

@@ -1,0 +1,14 @@
+Package: NetworkPPBLE
+Type: Package
+Title: Partial Parallel Bayes Linear Emulation for Networks
+Version: 0.1.0
+Author: Samuel E. Jackson
+Maintainer: Samuel E. Jackson <s.e.jackson@soton.ac.uk>
+Description: Partial Parallel Bayes Linear Emulation for Networks.
+Imports: pdist, QuickFunc, tgp, MASS, assertthat, rSPDE
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 2.1.0)
+RoxygenNote: 7.1.1
